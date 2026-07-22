@@ -1,9 +1,9 @@
-package codes
+package main
 
 import (
 	"fmt"
 )
 
-func helloJp() {
+func main() {
 	fmt.Println("Hello World!")
 }
