@@ -10,15 +10,26 @@ func number() {
 	fmt.Scan(&n[0], &op[0], &n[1])
 	fmt.Println("式:", n[0], op[0], n[1])
 
-	if op[0] == "+" {
-		fmt.Println(n[0] + n[1])
-	} else if op[0] == "-" {
-		fmt.Println(n[0] - n[1])
-	} else if op[0] == "*" {
-		fmt.Println(n[0] * n[1])
-	} else if op[0] == "/" {
-		fmt.Println(int(n[0]/n[1]), int(n[0]%n[1]))
-	} else {
-		fmt.Println("不明なオプション")
+	switch op[0] {
+	case "+":
+		{
+			fmt.Println(n[0] + n[1])
+		}
+	case "-":
+		{
+			fmt.Println(n[0] - n[1])
+		}
+	case "*":
+		{
+			fmt.Println(n[0] * n[1])
+		}
+	case "/":
+		{
+			fmt.Println(int(n[0]/n[1]), int(n[0]%n[1]))
+		}
+	default:
+		{
+			fmt.Println("不明なオプション")
+		}
 	}
 }
