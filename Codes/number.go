@@ -12,24 +12,14 @@ func number() {
 
 	switch op[0] {
 	case "+":
-		{
-			fmt.Println(n[0] + n[1])
-		}
+		fmt.Println(n[0] + n[1])
 	case "-":
-		{
-			fmt.Println(n[0] - n[1])
-		}
+		fmt.Println(n[0] - n[1])
 	case "*":
-		{
-			fmt.Println(n[0] * n[1])
-		}
+		fmt.Println(n[0] * n[1])
 	case "/":
-		{
-			fmt.Println(int(n[0]/n[1]), int(n[0]%n[1]))
-		}
+		fmt.Println(n[0]/n[1], n[0]%n[1])
 	default:
-		{
-			fmt.Println("不明なオプション")
-		}
+		fmt.Println("不明なオプション")
 	}
 }
